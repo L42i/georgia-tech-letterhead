@@ -1,24 +1,26 @@
 \documentclass[10pt]{article}
 
 % Logo Options: gt, coc, cse, cs, ic, scp
-\usepackage[cse]{gt-letterhead}
+% The School of Music has no logo option of its own, so use the Georgia Tech logo.
+\usepackage[gt]{gt-letterhead}
 
 % footer
-\fromdept{College of Computing}
+\fromdept{School of Music}
 
-\toaddress{Example Optional \\ To/From Address \\ Can Go Here}
+% lab line in the footer (optional)
+\fromlab{Lab for Interaction and Immersion (L42i) \textbullet\ \href{https://l42i.music.gatech.edu}{l42i.music.gatech.edu}}
+
+% recipient address (optional); keep \mbox{} if left empty
+\toaddress{\mbox{}}
 
 % header
-\fromdate{October 1, 2021}
+\fromdate{\today}
 
 % closing address
 \closing{Sincerely}
-\signaturefile{sig.png}
-\fromname{Dr.\ Such and Such\\Professor}
-\fromemail{\href{mailto:myemail@gatech.edu}{myemail@gatech.edu}}
-\fromweb{\href{https://mywebsite.gatech.edu/}{mywebsite.gatech.edu}}
-
-\aboutme{You can (optionally) put some information about yourself here (or just comment this line)}
+% \signaturefile{sig.png}
+\fromname{Henrik von Coler\\Assistant Professor\\School of Music\\Georgia Institute of Technology}
+\fromemail{\href{mailto:hvc@gatech.edu}{hvc@gatech.edu}}
 
 \begin{document}
 

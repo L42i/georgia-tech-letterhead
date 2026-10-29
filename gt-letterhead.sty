@@ -60,6 +60,7 @@
 
 \DeclareRobustCommand{\fromdate}[1]{\DeclareRobustCommand\@fromdate{#1}}
 \DeclareRobustCommand{\fromdept}[1]{\DeclareRobustCommand\@fromdept{#1}}
+\DeclareRobustCommand{\fromlab}[1]{\DeclareRobustCommand\@fromlab{#1}}
 \DeclareRobustCommand{\fromname}[1]{\DeclareRobustCommand\@fromname{#1 \\}}
 \DeclareRobustCommand{\fromemail}[1]{\DeclareRobustCommand\@fromemail{#1 \\}}
 \DeclareRobustCommand{\fromweb}[1]{\DeclareRobustCommand\@fromweb{#1}}
@@ -71,6 +72,7 @@
 \signaturefile{}
 \aboutme{}
 \fromdept{}
+\fromlab{}
 \fromemail{}
 \fromweb{}
 \fromname{}
@@ -153,6 +155,7 @@
     \color{GTblue}
 
     \fontsize{8}{12}\robotoMedium{\@fromdept} \\
+    \ifthenelse{\equal{\@fromlab}{}}{}{\fontsize{7}{12}\plexsans{\@fromlab} \\}
     \fontsize{7}{12}\plexsans{Atlanta, Georgia 30332-0700 U.S.A.} \\
     \fontsize{7}{12}\plexsans{Phone: 404.894.9044} \\
     \bigskip
